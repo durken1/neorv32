@@ -38,7 +38,7 @@
  * @brief Minimal blinking LED demo program using the lowest 8 bits of the GPIO.output port.
  **************************************************************************/
 #include <neorv32.h>
-#define BASE_ADDR 0x90000000
+#include <de10_lite.h>
 
 /************************************************************************
  * Main function; shows an incrementing 8-bit counter on GPIO.output(7:0).
@@ -55,7 +55,7 @@ int main()
 
   while (1)
   {
-    neorv32_cpu_store_unsigned_word(BASE_ADDR, cnt);
+    de10_lite_7seg_write(cnt);
     cnt += 1;
     neorv32_cpu_delay_ms(250); // wait 250ms using busy wait
   }
