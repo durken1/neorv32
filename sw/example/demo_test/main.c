@@ -41,9 +41,7 @@
 #include <de10_lite.h>
 
 /************************************************************************
- * Main function; shows an incrementing 8-bit counter on GPIO.output(7:0).
- *
- * @note This program requires the GPIO controller to be synthesized.
+ * Main function; Count up and display counter on 7 seg display
  *
  * @return Will never return.
  **************************************************************************/
