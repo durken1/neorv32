@@ -37,7 +37,7 @@
 # USER CONFIGURATION
 # -----------------------------------------------------------------------------
 # User's application sources (*.c, *.cpp, *.s, *.S); add additional files here
-APP_SRC ?= $(wildcard ./*.c) $(wildcard ./*.s) $(wildcard ./*.cpp) $(wildcard ./*.S)
+APP_SRC ?= $(wildcard ./*.c) $(wildcard ./*.s) $(wildcard ./*.cpp) $(wildcard ./*.S) $(wildcard */*.c) $(wildcard */*.s) $(wildcard */*.S)
 
 # User's application include folders (don't forget the '-I' before each entry)
 APP_INC ?= -I .
