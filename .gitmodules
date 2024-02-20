@@ -1,0 +1,3 @@
+[submodule "sw/aoc"]
+	path = sw/aoc
+	url = git@github.com:durken1/aoc.git
